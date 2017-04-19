@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Virtually Pink - A-Frame WebVR Game</title>
+    <meta name="description" content="Hello, World! - A-Frame">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    
+  
+    <a-scene>
+    	<a-sky color="#000000"></a-sky>
+    
+    	<a-entity camera look-controls>
+    		<a-entity geometry="primitive: ring; radiusOuter: 0.030; radiusInner: 0.020;" material="color: white;" position="0 0 -1" cursor="maxDistance: 30; fuse: true; fuseTimeout: 1000">
+            
+            	<a-animation begin="cursor-fusing" attribute="scale" easing="ease-in" fill="forwards" from="1 1 1" to="0.5 0.5 0.5"></a-animation>
+                
+                <a-animation begin="cursor-unfusing" attribute="scale" easing="ease-in" fill="forwards" from="0.5 0.5 0.5" to="1 1 1"></a-animation>
+            
+            </a-entity>
+        </a-entity>
+        
+      <a-box id="sq1c" depth="0.1" width="0.55" height="0.55" position="-0.75 0.75 -1.9" rotation="0 0 0" color="#000000" opacity="0"></a-box>
+      <a-box id="sq2c" depth="0.1" width="0.55" height="0.55" position="0 0.75 -1.9" rotation="0 0 0" color="#000000" opacity="0"></a-box>
+      <a-box id="sq3c" depth="0.1" width="0.55" height="0.55" position="0.75 0.75 -1.9" rotation="0 0 0" color="#000000" opacity="0"></a-box>
+
+      <a-box id="sq4c" depth="0.1" width="0.55" height="0.55" position="-0.75 0 -1.9" rotation="0 0 0" color="#000000" opacity="0"></a-box>
+      <a-box id="sq5c" depth="0.1" width="0.55" height="0.55" position="0 0 -1.9" rotation="0 0 0" color="#000000" opacity="0"></a-box>
+      <a-box id="sq6c" depth="0.1" width="0.55" height="0.55" position="0.75 0 -1.9" rotation="0 0 0" color="#000000" opacity="0"></a-box>
+      
+      <a-box id="sq7c" depth="0.1" width="0.55" height="0.55" position="-0.75 -0.75 -1.9" rotation="0 0 0" color="#000000" opacity="0"></a-box>
+      <a-box id="sq8c" depth="0.1" width="0.55" height="0.55" position="0 -0.75 -1.9" rotation="0 0 0" color="#000000" opacity="0"></a-box>
+      <a-box id="sq9c" depth="0.1" width="0.55" height="0.55" position="0.75 -0.75 -1.9" rotation="0 0 0" color="#000000" opacity="0"></a-box>
+      
+      
+      <a-box id="sq1b" depth="0.1" width="0.5" height="0.5" position="-0.75 0.75 -2" rotation="0 0 0" color="#4CC3D9"></a-box>
+      <a-box id="sq2b" depth="0.1" width="0.5" height="0.5" position="0 0.75 -2" rotation="0 0 0" color="#4CC3D9"></a-box>
+      <a-box id="sq3b" depth="0.1" width="0.5" height="0.5" position="0.75 0.75 -2" rotation="0 0 0" color="#4CC3D9"></a-box>
+
+      <a-box id="sq4b" depth="0.1" width="0.5" height="0.5" position="-0.75 0 -2" rotation="0 0 0" color="#4CC3D9"></a-box>
+      <a-box id="sq5b" depth="0.1" width="0.5" height="0.5" position="0 0 -2" rotation="0 0 0" color="#4CC3D9"></a-box>
+      <a-box id="sq6b" depth="0.1" width="0.5" height="0.5" position="0.75 0 -2" rotation="0 0 0" color="#4CC3D9"></a-box>
+      
+      <a-box id="sq7b" depth="0.1" width="0.5" height="0.5" position="-0.75 -0.75 -2" rotation="0 0 0" color="#4CC3D9"></a-box>
+      <a-box id="sq8b" depth="0.1" width="0.5" height="0.5" position="0 -0.75 -2" rotation="0 0 0" color="#4CC3D9"></a-box>
+      <a-box id="sq9b" depth="0.1" width="0.5" height="0.5" position="0.75 -0.75 -2" rotation="0 0 0" color="#4CC3D9"></a-box>
+      
+      
+      <a-box id="sq1p" depth="0.1" width="0.5" height="0.5" position="-0.75 0.75 -2" rotation="0 0 0" color="#C34CD9"></a-box>
+      <a-box id="sq2p" depth="0.1" width="0.5" height="0.5" position="0 0.75 -2" rotation="0 0 0" color="#C34CD9"></a-box>
+      <a-box id="sq3p" depth="0.1" width="0.5" height="0.5" position="0.75 0.75 -2" rotation="0 0 0" color="#C34CD9"></a-box>
+
+      <a-box id="sq4p" depth="0.1" width="0.5" height="0.5" position="-0.75 0 -2" rotation="0 0 0" color="#C34CD9"></a-box>
+      <a-box id="sq5p" depth="0.1" width="0.5" height="0.5" position="0 0 -2" rotation="0 0 0" color="#C34CD9"></a-box>
+      <a-box id="sq6p" depth="0.1" width="0.5" height="0.5" position="0.75 0 -2" rotation="0 0 0" color="#C34CD9"></a-box>
+      
+      <a-box id="sq7p" depth="0.1" width="0.5" height="0.5" position="-0.75 -0.75 -2" rotation="0 0 0" color="#C34CD9"></a-box>
+      <a-box id="sq8p" depth="0.1" width="0.5" height="0.5" position="0 -0.75 -2" rotation="0 0 0" color="#C34CD9"></a-box>
+      <a-box id="sq9p" depth="0.1" width="0.5" height="0.5" position="0.75 -0.75 -2" rotation="0 0 0" color="#C34CD9"></a-box>
+      
+      
+      <a-box id="sq1y" depth="0.1" width="0.5" height="0.5" position="-0.75 0.75 -2" rotation="0 0 0" color="#C3D94C"></a-box>
+      <a-box id="sq2y" depth="0.1" width="0.5" height="0.5" position="0 0.75 -2" rotation="0 0 0" color="#C3D94C"></a-box>
+      <a-box id="sq3y" depth="0.1" width="0.5" height="0.5" position="0.75 0.75 -2" rotation="0 0 0" color="#C3D94C"></a-box>
+
+      <a-box id="sq4y" depth="0.1" width="0.5" height="0.5" position="-0.75 0 -2" rotation="0 0 0" color="#C3D94C"></a-box>
+      <a-box id="sq5y" depth="0.1" width="0.5" height="0.5" position="0 0 -2" rotation="0 0 0" color="#C3D94C"></a-box>
+      <a-box id="sq6y" depth="0.1" width="0.5" height="0.5" position="0.75 0 -2" rotation="0 0 0" color="#C3D94C"></a-box>
+      
+      <a-box id="sq7y" depth="0.1" width="0.5" height="0.5" position="-0.75 -0.75 -2" rotation="0 0 0" color="#C3D94C"></a-box>
+      <a-box id="sq8y" depth="0.1" width="0.5" height="0.5" position="0 -0.75 -2" rotation="0 0 0" color="#C3D94C"></a-box>
+      <a-box id="sq9y" depth="0.1" width="0.5" height="0.5" position="0.75 -0.75 -2" rotation="0 0 0" color="#C3D94C"></a-box>
+      
+      <a-text id="text_instructions" value="Change all the squares to pink.\nFocus on the squares to play." align="center" width="2" position="0 -1.25 -2" color="#FFFFFF"></a-text>
+      
+      <a-text id="text_completed" value="Well done!  Focus here to play again." align="center" width="2" position="0 -1.25 -2" color="#FFFFFF"></a-text>
+      
+      <a-box id="textClick" depth="0.1" width="2" height="0.3" position="0 -1.25 -1.9" rotation="0 0 0" color="#ffffff" opacity="0"></a-box>
+
+    </a-scene>
+  </body>
+</html>
